@@ -75,24 +75,28 @@
             consent;
 
           var request = $.ajax({
-            url: "bin/appointement-form-consent.php",
+            url: "https://script.google.com/macros/s/AKfycbw0R9sSW6R2Q6nj0l0YLKRLakbNcKnX1m_E1XSpV9oNwQ5wgaI/exec",
             type: "POST",
             data: dataString,
-            dataType: "html"
+            dataType: "json"
           });
 
-          request.done(function(msg) {
-            //alert( "Request successfull: " + msg);
-            $("#form-contact").append(
-              "<p class='sucess'>Thank You,<br/> Your message is received.</p>"
-            );
-            $(".contact_us").remove();
+          request.done(function(result) {
+            if (result.error) {
+              $("#form-contact").append(
+                "<p class='failure'>Error in submission, please try again or call 020 8361 3219.</p>"
+              );
+            } else {
+              $("#form-contact").append(
+                "<p class='sucess'>Thank You,<br/> Your message is received.</p>"
+              );
+              $(".contact_us").remove();
+            }
           });
 
           request.fail(function(jqXHR, textStatus) {
-            //alert( "Request failed: " + textStatus );
             $("#form-contact").append(
-              "<p class='failure'>Erron in submission, please try again.</p>"
+              "<p class='failure'>Error in submission, please try again or call 020 8361 3219.</p>"
             );
           });
         }

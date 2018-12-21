@@ -1262,7 +1262,7 @@ blockquote p {
 .map {
   width: 100%;
   height: 550px;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-top: 169px;
 }
 
