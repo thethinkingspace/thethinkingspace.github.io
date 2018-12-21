@@ -1,0 +1,57 @@
+<!-- Header -->
+<header id="top-header" class="header-home">
+  <div class="grid">
+    <div class="col-1-1">
+      <div class="content">
+        <div class="logo-wrap"><a href="/" class="logo"></a></div>
+        <nav class="navigation">
+          <input type="checkbox" id="nav-button" />
+          <label for="nav-button" onclick></label>
+          <ul class="nav-container">
+            <li>
+              <a href="/" class="{% if page.dir == '/' %}current{% endif %}"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/services/"
+                class="{% if page.dir == '/services/' %}current{% endif %}"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="/treatments/"
+                class="{% if page.dir == '/treatments/' %}current{% endif %}"
+                >Treatments</a
+              >
+            </li>
+            <li>
+              <a
+                href="/team/"
+                class="{% if page.dir == '/team/' %}current{% endif %}"
+                >Team</a
+              >
+            </li>
+            <li>
+              <a
+                href="/gp-services/"
+                class="{% if page.dir == '/gp-services/' %}current{% endif %}"
+                >GP Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contact/"
+                class="{% if page.dir == '/contact/' %}current{% endif %}"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End Header -->
