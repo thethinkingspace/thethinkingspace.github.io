@@ -8,6 +8,6 @@ $(document).ready(function($) {
     date_format: "style2",
     visible_tweets: 2,
     request_url:
-      "https://script.google.com/macros/s/AKfycbxeDJE0T3PZQzjlVdZRPMi6De5s3bd05JMKb2a_RY2dkxf8gb6p/exec"
+      "https://script.google.com/macros/s/AKfycbxqYNkNejlaS6zL1PJ6Ud9Yq7zKc9zByDKGYeMuNgNIXxmLXJU/exec"
   });
 });
