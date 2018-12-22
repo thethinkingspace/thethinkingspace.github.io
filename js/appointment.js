@@ -75,7 +75,7 @@
             consent;
 
           var request = $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbzPFdnusss0YYhz8Z0OE-snekx8m_P7fNj-lC9uvR44KOLb-TQ/execs",
+            url: "https://script.google.com/macros/s/AKfycbzPFdnusss0YYhz8Z0OE-snekx8m_P7fNj-lC9uvR44KOLb-TQ/exec",
             type: "POST",
             data: dataString,
             dataType: "json"
